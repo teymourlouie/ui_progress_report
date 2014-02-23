@@ -1,0 +1,103 @@
+% !TeX program = xelatex
+% !TeX spellcheck = 
+
+\documentclass{ui_progress}
+
+\usepackage[colorlinks=true]{hyperref}
+
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{float}
+\usepackage{hhline}
+\usepackage{colortbl}
+\usepackage{hyperref}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{lipsum}
+\usepackage{setspace}
+\usepackage{diagbox}
+\usepackage[numbers, sort&compress]{natbib}
+
+\usepackage{hypernat}
+\usepackage{xcolor}
+%uncomment on print version
+\hypersetup{
+	citecolor=black,
+	linkcolor=black
+}
+\usepackage[all]{hypcap}
+%\usepackage{showframe}
+
+\usepackage{xepersian}
+\settextfont{XB Niloofar}
+\setdigitfont{Parsi Digits}
+
+
+\newcommand{\mylr}[1]{\texorpdfstring{\lr{#1}}{#1}}
+\eqenvironment{نکات}{itemize}
+\newtheorem{definition}{تعریف}
+\eqenvironment{تعریف}{definition}
+\eqcommand{مورد}{item}
+
+\renewcommand{\descriptionlabel}[1]%
+{\hspace{\labelsep} $\checkmark$ \hspace{\labelsep}\textbf{#1}}
+
+\def\OWL{\lr{ OWL }}
+\def\XML{\lr{ XML }}
+
+\آرم{logo2.jpg}
+\دانشجو{مهدی تیمورلوئی}
+\شماره‌دانشجویی{901411702}
+\ایمیل{m.teymourlouie@eng.ui.ac.ir}
+\تلفن‌تماس{09143012589}
+\گروه{کامپیوتر}
+\دانشکده{فنی و مهندسی}
+\‌رشته‌تحصیلی{مهندسی کامپیوتر}
+\گرایش{نرم‌افزار}
+\مقطع{دکتری}
+\سنوات{۴.۵}
+
+\‌استادراهنما{محمدعلی نعمت‌بخش}
+\استا‌دراهنمای‌دوم{احمد زائری}
+
+\عنوان‌فارسی {یک روش اشکال‌زدایی برای ارتقای درستی آنتولوژی}
+\عنوان‌لاتین{A Debugging Approach to Improve Ontology Correctness}
+\تاریخ‌تصویب{1392/10/17}
+\تاریخ‌دفاع{1394/11/30}
+
+\تاریخ‌شروع{1392/10/01}
+\تاریخ‌پایان{1392/11/30}
+
+\پیشرفت‌کار{
+
+\شروع{شمارش}
+\مورد تعیین رویکرد حل مسئله
+\مورد مشخص کردن زیرمسئله‌ها و رویکرد حل آن‌ها
+\مورد مطالعه راه‌حل‌های موجود
+\پایان{شمارش}
+
+}
+\بیان‌مسئله{٪۸۰}
+\پیشینه‌تحقیق{٪۶۰}
+\راه‌حل‌پیشنهادی{٪۲}
+\ارزیابی{٪۰}
+\نگارش‌پایان‌نامه{٪۰}
+\مشکلات{
+\شروع{نکات}
+\مورد سرعت پایین اینترنت برای دسترسی به داده‌های وب پیوندی مانند \lr{DBPedia, Freebase}
+\مورد عدم وجود چارچوب موجود برای توسعه راه‌کار و نیاز به توسعه آن
+\پایان{نکات}
+}
+\مقالات‌ارسالی{}
+\وضعیت‌زمان‌بندی{\\به نظر می‌رسد پروژه براساس زمان‌بندی قبلی پیشرفت داشته است.}
+\کارهای‌آینده{
+\شروع{نکات}
+\مورد حل زیرمسئله \rq\rq استخراج دانش زمینه‌ای مرتبط با یک مفهوم در آنتولوژی\lq\lq
+\مورد اقدام برای اخذ فرصت مطالعاتی از مراکز تحقیقاتی مرتبط
+\پایان{نکات}
+}
+
+\begin{document}
+\maketitlepage
+\end{document}
