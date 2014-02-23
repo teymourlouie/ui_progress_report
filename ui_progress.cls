@@ -60,6 +60,7 @@
 %supervisor
 \mydef{supervisor}{‌استادراهنما}
 \mydef{secsupervisor}{استا‌دراهنمای‌دوم}
+\mydef{suptitle}{عنوان‌استادراهنما}
 
 %advisor
 \mydef{advisor}{استادمشاور}
@@ -145,6 +146,21 @@
 
 \end{mdframed}
 }
+
+\def\mantitle{
+\ifnum \pdf@strcmp{\@secsupervisor}{} = 0
+جناب آقای
+\else
+جناب آقایان
+\fi
+}
+\def\supertitle{
+\ifnum \pdf@strcmp{\@suptitle}{} = 0
+\mantitle
+\else
+\@suptitle
+\fi
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % صفحه عنوان
 
@@ -163,7 +179,7 @@
 \vspace{-2mm}
 \begin{mdframed}
 %student
-\noindent استاد(ان) راهنمای محترم:  \textbf{جناب آقایان دکتر \@supervisor
+\noindent استاد(ان) راهنمای محترم:  \textbf{\supertitle \  دکتر \@supervisor
 \ifnum \pdf@strcmp{\@secsupervisor}{} = 0
 \else
  \ و دکتر \@secsupervisor
