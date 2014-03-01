@@ -102,7 +102,7 @@
 \def\makelevelbox{
 \begin{mdframed}[roundcorner=10pt, needspace=0mm, rightmargin=2cm, leftmargin=2cm, innertopmargin=1mm, innerbottommargin=1mm, align=center, innerrightmargin=5mm, innerleftmargin=2mm]
 {
-\textbf{\centering گزارش پیشرفت تحصیلی پایان نامه دانشجویان گروه مهندسی سیستم‌های نرم‌افزاری دانشگاه اصفهان}
+\textbf{\centering گزارش پیشرفت تحصیلی پایان‌نامه دانشجویان گروه مهندسی سیستم‌های نرم‌افزاری دانشگاه اصفهان}
 }
 \\
 %\vspace{-4mm}
