@@ -44,6 +44,8 @@
 		{\expandafter \csname#1\endcsname}
  }
 
+\mydef{reportno}{شماره‌گزارش}
+
 %student
 \mydef{department}{گروه}
 \mydef{student}{دانشجو}
@@ -75,6 +77,7 @@
 %report dates
 \mydef{reportstartdate}{تاریخ‌شروع}
 \mydef{reportenddate}{تاریخ‌پایان}
+\mydef{reportduration}{مدت}
 
 %report items
 \mydef{workprogress}{پیشرفت‌کار}
@@ -142,7 +145,7 @@
 \centering{ دکتر #1} &
 \end{tabular}
 \پایان{چپ‌چین}
-\vspace{30pt}
+\vspace{10pt}
 
 \end{mdframed}
 }
@@ -174,7 +177,9 @@
 \vspace{-2mm}
 \makelevelbox
 \end{center}
-
+گزارش شماره: 
+ \textbf{\@reportno}
+\\
 \textbf{الف: (توسط دانشجو تکمیل شود)}
 \vspace{-2mm}
 \begin{mdframed}
@@ -187,7 +192,7 @@
 }
 \\
 با سلام، \\
-گزارش پیشرفت تحصیلی پایان‌نامه اینجانب از تاریخ \@reportstartdate تا تاریخ \@reportenddate به مدت 2 ماه به شرح ذیل به استحضار می‌رسد. \\
+گزارش پیشرفت تحصیلی پایان‌نامه اینجانب از تاریخ \@reportstartdate تا تاریخ \@reportenddate به مدت \@reportduration\ به شرح ذیل به استحضار می‌رسد. \\
 نام و نام خانوادگی دانشجو:
 \textbf{\@student}  \quad
 شماره دانشجوئی:
@@ -231,7 +236,7 @@
 \مورد {مشکلات علمی-اجرائی و مالی در مسیر تحقیق:}
 {\@obstacles}
 \مورد {لیست مقالات علمی ارسالی که هنوز پذیرش نشده است:}
-{\@submittedarticles}
+{\\\@submittedarticles}
 \مورد {میزان تاخیر و یا تقدم براساس برنامه اولیه:}
 {\@schedule}
 \پایان{شمارش}
@@ -253,7 +258,7 @@
 \vspace{10pt}
 \end{mdframed}
 \pagebreak
-\vspace*{20pt}
+\vspace*{10pt}
 \textbf{ب: (توسط استاد یا استادان راهنما تكمیل شود)}
 \makesupervisorbox{\@supervisor}
 \ifnum \pdf@strcmp{\@secsupervisor}{} = 0
@@ -272,7 +277,7 @@
 \centering{امضا مدیر گروه یا نماینده تحصیلات تكمیلی} &
 \end{tabular}
 \پایان{چپ‌چین}
-\vspace{30pt}
+\vspace{10pt}
 \end{mdframed}
 \restoregeometry
 }
